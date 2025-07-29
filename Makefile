@@ -1,7 +1,7 @@
 CC=arm-none-eabi-g++
 AS=arm-none-eabi-as
 LD=arm-none-eabi-ld
-CFLAGS=-mcpu=cortex-m3 -mthumb -nostdlib -Os -ffreestanding
+CFLAGS=-mcpu=cortex-m3 -mthumb -nostdlib -Os -ffreestanding -fno-exceptions -fno-rtti
 
 OBJS = main.o scheduler.o startup.o
 
