@@ -15,8 +15,8 @@ void task3() {
 extern "C" int main() {
     scheduler::init();
     scheduler::enqueue(task1);
-    scheduler::enqueue(task2);
     scheduler::enqueue(task3);
+    scheduler::enqueue(task2);
     scheduler::run();
     while (1);
 }
